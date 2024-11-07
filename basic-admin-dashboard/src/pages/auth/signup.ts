@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import bcrypt from 'bcrypt';
-import {loadUsers, savedUsers} from '@/utils/userUtils';
+import {loadUsers, savedUsers} from '../../utils/userUtils';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse){
     if(req.method =='POST'){
